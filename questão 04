@@ -1,0 +1,5 @@
+inteiro salario , ajustado
+escreva(" qual o seu salario atual ?")
+leia(salario)
+ajustado = salario +100 
+escreva("seu salario reaajutado é " ,ajustado)
