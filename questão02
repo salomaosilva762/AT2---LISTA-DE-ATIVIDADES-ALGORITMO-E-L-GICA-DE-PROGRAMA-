@@ -1,0 +1,9 @@
+inteiro a , b , c ,  quadrada
+    escreva("valor a ?")
+    leia(a)
+    escreva("valor de b ?")
+    leia(b)
+  c = a + b
+  quadrada = c * c
+ 
+escreva(" o valor somado ",c ,"\n valor ao quadrado da soma ",quadrada)
