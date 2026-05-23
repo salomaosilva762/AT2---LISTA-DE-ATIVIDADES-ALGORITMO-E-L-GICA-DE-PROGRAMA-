@@ -1,0 +1,38 @@
+cadeia nome, nome_mais_caro
+        real preco, preco_mais_caro
+        inteiro contador
+
+        
+        contador = 1
+        preco_mais_caro = 0.0
+        nome_mais_caro = ""
+
+       
+        enquanto (contador <= 5)
+        {
+            escreva("Digite o nome do ", contador, "º produto: ")
+            leia(nome)
+            
+            escreva("Digite o preço do ", contador, "º produto: R$ ")
+            leia(preco)
+
+            
+            se (contador == 1)
+            {
+                preco_mais_caro = preco
+                nome_mais_caro = nome
+            } senao {
+                se (preco > preco_mais_caro)
+                {
+                    preco_mais_caro = preco
+                    nome_mais_caro = nome
+                }
+            }
+
+            contador = contador + 1
+        }
+
+        
+        escreva("\n--- Resultado Final ---")
+        escreva("\nO produto mais caro é: ", nome_mais_caro)
+        escreva("\nO valor do produto mais caro é: R$ ", preco_mais_caro)
