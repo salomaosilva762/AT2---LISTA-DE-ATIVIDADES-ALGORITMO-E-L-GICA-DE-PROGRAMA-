@@ -1,0 +1,39 @@
+inteiro nota, contador = 1
+        inteiro notasAltas = 0, notasBaixas = 0
+
+        
+        enquanto (contador <= 6)
+        {
+            escreva("Digite a nota do cliente ", contador, " (de 1 a 5): ")
+            leia(nota)
+
+
+            se (nota >= 1 e nota <= 5)
+            {
+                
+                se (nota >= 4)
+                {
+                    notasAltas = notasAltas + 1
+                }
+                senao
+                {
+                    notasBaixas = notasBaixas + 1
+                }
+                
+                
+                contador = contador + 1
+            }
+            senao
+            {
+                escreva("Nota inválida! Por favor, digite um valor entre 1 e 5.\n")
+            }
+        }
+
+       
+        escreva("\n--- Resultado da Pesquisa ---\n")
+        escreva("Clientes com nota maior ou igual a 4: ", notasAltas, "\n")
+        escreva("Clientes com nota menor que 4: ", notasBaixas, "\n")
+    }
+
+
+  }
